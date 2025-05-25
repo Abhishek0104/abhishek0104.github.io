@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif; /* Or your preferred font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 960px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #343a40; /* Dark background for header */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+nav {
+    background: #495057; /* Slightly lighter dark background for nav */
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block; /* 'inline' or 'inline-block' */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 4px; /* Optional: for button-like appearance */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active { /* Style for active page or hover */
+    background-color: #6c757d; /* Darker shade on hover/active */
+}
+
+main {
+    padding: 20px 0; /* Add some padding top and bottom for the main content */
+}
+
+main .container {
+    background-color: #fff; /* White background for content area */
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow */
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee; /* Separator line between sections */
+}
+
+section:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+h2 {
+    color: #343a40; /* Dark color for section titles */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    float: right; /* Or 'left' */
+    margin: 0 0 15px 15px; /* Adjust margin as needed */
+    width: 150px; /* Adjust size */
+    height: 150px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 3px solid #ddd;
+}
+
+#about-me p {
+    margin-bottom: 15px;
+    clear: both; /* Ensures text doesn't wrap weirdly if profile picture is floated */
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block; /* Display links side-by-side */
+    margin-right: 15px; /* Space between links */
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #007bff; /* Standard link color, or choose your own */
+    font-weight: bold;
+}
+
+.social-links li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #343a40; /* Same as header */
+    color: #fff;
+    margin-top: 30px; /* Space above the footer */
+}
+
+/* Basic Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        display: block; /* Stack nav links on smaller screens */
+        margin: 10px 0;
+    }
+
+    .profile-picture {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto; /* Center the profile picture */
+    }
+}
+
+/* Add these to your css/style.css file */
+
+.header-layout {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Creates space between the image and the text block */
+}
+
+.header-profile-picture {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular (optional) */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column; /* Stacks name, title, and links vertically */
+}
+
+/* Styling for social links within the header */
+.header-info .social-links {
+    list-style: none; /* Removes default bullet points */
+    padding: 0; /* Removes default padding */
+    margin-top: 10px; /* Adds some space above the social links */
+    display: flex; /* Lays out social link items horizontally */
+    gap: 15px; /* Adds space between individual social links */
+}
+
+/* If you prefer social links to remain as block elements stacked vertically:
+.header-info .social-links li {
+    margin-bottom: 5px;
+}
+*/
